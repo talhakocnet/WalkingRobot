@@ -27,7 +27,7 @@ namespace YuruyenRobot.Managers
             foreach (char c in commands)
             {
                 if (OneMove(c) == false)
-                    return "Command Error!!! the command only consist of 'L','R','M' !!!";
+                    return "Command Error!!! the command must only consist of 'L','R','M' !!!";
             }
             result = x.ToString() + " " + y.ToString() + " " + direct;
             return result;
